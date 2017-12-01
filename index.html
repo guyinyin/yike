@@ -42,10 +42,14 @@
 			</div>
 			<!-- 主体 -->
 			<div ng-class="{body:true,collapse:collapsed}">
+				<!-- 表示加载图片 -->
+				<div ng-if="loading">
+					<img src="public/images/loading.gif.gif" alt="">
+				</div>
 				<div ng-view></div>
 			</div>
 		</div>
 	</div>
-	<!--<script src="public/libs/toggle.js"></script> -->
+	
 </body>
 </html>
